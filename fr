@@ -1,0 +1,26 @@
+loadstring(game:HttpGet("https://pastebin.com/raw/MdbWYKqZ"))()
+DaHoodSettings.Prediction = 0.1473
+Aiming.TargetPart = {"Head", "UpperTorso", "LowerTorso", "HumanoidRootPart"}
+Aiming.FOV = 80
+Aiming.FOVSides = 125
+Aiming.HitChance = 110
+Aiming.ShowFOV = false
+-- -- DD O TARGET FOCUS-- LUCI-- FOUCZationBindable.OnInvoke--DONT FUCK WIT
+ local function callback(Text)
+ if Text == "Button1 text" then
+  print ("Answer")
+elseif Text == ("Button2 text") then
+ print ("Answer2")
+ end
+end
+
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+--
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "hiii baby :3";
+ Text = "i lovee uuuu";
+ Icon = "";
+ Duration = 10;
+ Callback = NotificationBindable;
+}) 
